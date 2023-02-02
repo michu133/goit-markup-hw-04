@@ -41,6 +41,8 @@ body {
 button:hover {
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 button:focus {
   color: #ffffff;
@@ -83,6 +85,50 @@ ul {
   color: #757575;
   font-size: 14px;
   text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  display: flex;
+}
+.flex-tel {
+  display: flex;
+  justify-content: space-between;
+  width: 321px;
+  box-sizing: border-box;
+}
+.flex-tel a {
+  color: #757575;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.flex-mail a:hover {
+  color: #2196f3;
+}
+.flex-tel a:hover {
+  color: #2196f3;
+}
+.flex-mail {
+  display: flex;
+  justify-content: space-between;
+  width: 161px;
+  align-items: center;
+  text-align: center;
+}
+.flex-mail svg,
+.flex-telnr svg {
+  fill: #757575;
+}
+.flex-mail svg:hover,
+.flex-telnr svg:hover {
+  fill: #2196f3;
+}
+.flex-telnr {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  align-items: center;
+  text-align: center;
 }
 .header-adress-link:focus {
   color: #2196f3;
@@ -156,7 +202,7 @@ ul {
 
 .nav-menu {
   display: flex;
-  margin-right: 427.35px;
+  margin-right: 345px;
 }
 .nav-menu > .nav-btn:not(:last-child) {
   margin-right: 46px;
@@ -191,6 +237,11 @@ ul {
   flex-direction: column;
   width: 370px;
 }
+.card-flex:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .page-header {
   height: 80px;
@@ -203,15 +254,26 @@ ul {
   align-items: center;
   width: 1200px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 .banner {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 600px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
   justify-content: center;
+  background-image: linear-gradient(
+      90deg,
+      rgba(47, 48, 58, 0.4) 100%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../images/efektywne.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .banner-text {
   font-weight: 900;
@@ -400,13 +462,25 @@ ul {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 .team-social:hover {
   background-color: #2196f3;
 }
 .team-icon {
+  fill: #afb1b8;
+}
+.team-icon:hover {
+  fill: white;
+}
+.footer-icon {
+  fill: white;
+}
+.customers-icon {
+  fill: #afb1b8;
+}
+.customers-icon:hover {
   fill: #2196f3;
 }
 .customers-section {
@@ -471,6 +545,6 @@ ul {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
 }
-.footer-icon{
-  fill:#ececec;
+.footer-icon {
+  fill: #ececec;
 }
