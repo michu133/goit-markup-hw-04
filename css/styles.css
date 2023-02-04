@@ -58,6 +58,7 @@ button {
   padding: 6px 22px;
   font-weight: 500;
   letter-spacing: 0.03em;
+  line-height: 26px;
 }
 
 ul {
@@ -102,12 +103,21 @@ ul {
   letter-spacing: 0.02em;
   font-weight: 500;
 }
-.flex-mail a:hover {
+
+.flex-mail:hover svg {
+  fill: #2196f3;
+}
+.flex-mail:hover {
   color: #2196f3;
 }
-.flex-tel a:hover {
+
+.flex-telnr:hover svg {
+  fill: #2196f3;
+}
+.flex-telnr:hover {
   color: #2196f3;
 }
+
 .flex-mail {
   display: flex;
   justify-content: space-between;
@@ -115,14 +125,7 @@ ul {
   align-items: center;
   text-align: center;
 }
-.flex-mail svg,
-.flex-telnr svg {
-  fill: #757575;
-}
-.flex-mail svg:hover,
-.flex-telnr svg:hover {
-  fill: #2196f3;
-}
+
 .flex-telnr {
   display: flex;
   justify-content: space-between;
@@ -468,6 +471,9 @@ ul {
 .team-social:hover {
   background-color: #2196f3;
 }
+.team-social:hover svg {
+  fill: white;
+}
 .team-icon {
   fill: #afb1b8;
 }
@@ -480,9 +486,7 @@ ul {
 .customers-icon {
   fill: #afb1b8;
 }
-.customers-icon:hover {
-  fill: #2196f3;
-}
+
 .customers-section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -510,6 +514,9 @@ ul {
 
 .customers-cards > .customers-card:not(:last-child) {
   margin-right: 30px;
+}
+.customers-card:hover svg {
+  fill: #2196f3;
 }
 .customers-card:hover {
   border: 1px solid #2196f3;
