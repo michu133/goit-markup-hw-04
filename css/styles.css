@@ -95,6 +95,7 @@ ul {
   justify-content: space-between;
   width: 321px;
   box-sizing: border-box;
+  fill: #757575;
 }
 .flex-tel a {
   color: #757575;
